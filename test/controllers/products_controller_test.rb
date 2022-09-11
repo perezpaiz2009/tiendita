@@ -14,7 +14,7 @@ test 'render a detailed product page' do
     assert_response :success
     assert_select '.title','Nintendo Switch'
     assert_select '.description','Le falla el lector de la tarjeta sd'
-    assert_select '.price','$195'
+    assert_select '.price','$195'   
     end
 
 test 'render a new product form' do
@@ -64,8 +64,9 @@ product: {
                 }
                 assert_redirected_to products_path
                 assert_equal flash[:notice],'Tu producto se ha actualizado correctamente'
-            
-                end
+                            end
 
             
     end 
+
+    
