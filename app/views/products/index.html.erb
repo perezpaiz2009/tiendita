@@ -5,10 +5,13 @@
 <div> 
 <h2><%= product.title  %></h2>
 <%= image_tag product.photo,width: 200 if product.photo.attached? %> 
+</div>
 <div>Precio: $
 <span><%=  product.price %></span><br>
 </div>
-<span><%=  product.description %></span><br>
+
+<div>
+<span>Descripcion:<%=  product.description %></span>
 </div>
 <% end %>
 <% end %>
